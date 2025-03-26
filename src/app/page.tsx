@@ -25,7 +25,7 @@ const page = () => {
 						The simplify way to handle emails...Literally
 					</p>
 				</div>
-				<div className='loginForm py-8 md:px-20 px-4 bg-white rounded-sm mt-10 md:mx-0 mx-2'>
+				<div className='loginForm py-8 md:px-20 px-4 bg-white rounded-sm mt-10 md:mx-0 mx-4'>
 					<div>
 						<h3 className='md:text-2xl text-xl font-semibold capitalize text-center text-[#07998C]'>
 							Sign In
