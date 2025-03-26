@@ -10,7 +10,7 @@ const LinkBox = ({ url, title, color, Icon }: linkBox) => {
 	return (
 		<button
 			// href={url}
-			className='px-6 md:px-10 py-16 flex items-center flex-col font-semibold text-[#453D3D] gap-2'
+			className='py-8 w-40 flex items-center flex-col font-semibold text-[#453D3D] gap-2'
 			style={{ backgroundColor: color }}>
 			<Icon
 				size={32}

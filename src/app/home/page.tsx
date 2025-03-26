@@ -9,13 +9,13 @@ const page = () => {
 	return (
 		<div>
 			<Navbar />
-			<div className='homeBannerLinks px-10 py-6'>
+			<div className='homeBannerLinks md:px-10 px-6 w-full py-6'>
 				{/* title */}
 				<Title
 					header='Welcome, James'
 					subtext='What will you like to do today?'
 				/>
-				<div className='linksPlane flex items-center justify-between gap-4 mt-4 flex-wrap'>
+				<div className='linksPlane flex items-center md:justify-between justify-around md:gap-4 gap-2 w-full mt-4 flex-wrap'>
 					<LinkBox
 						url='/'
 						title='Unread Inbox'
