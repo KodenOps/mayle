@@ -23,7 +23,7 @@ const Navbar = () => {
 				<input
 					type='text'
 					placeholder='Search/CTRL K'
-					className='outline-none border-transparent bg-transparent'
+					className='outline-none border-transparent bg-transparent font-medium'
 				/>
 			</div>
 			<div className='userprof md:flex items-center gap-4 hidden'>

@@ -4,12 +4,17 @@ import Title from '@/component/Title';
 import React from 'react';
 import { MdOutlineMessage } from 'react-icons/md';
 import { BiMessageDetail } from 'react-icons/bi';
+import { CiCircleList } from 'react-icons/ci';
+import { TbCalendarTime } from 'react-icons/tb';
+import { HiOutlineBellAlert } from 'react-icons/hi2';
+import { TbBulb } from 'react-icons/tb';
+import { HiUserPlus } from 'react-icons/hi2';
 
 const page = () => {
 	return (
 		<div>
 			<Navbar />
-			<div className='homeBannerLinks md:px-10 px-6 w-full py-6 border-2 border-[#c4c4c4]'>
+			<div className='homeBannerLinks md:px-10 px-6 w-full py-6 border-2 border-[#e7e7e7]'>
 				{/* title */}
 				<Title
 					header='Welcome, James'
@@ -24,34 +29,46 @@ const page = () => {
 					/>
 					<LinkBox
 						url='/'
-						title='Unread Inbox'
+						title='View Queue'
 						color='#F0E1D6'
-						Icon={BiMessageDetail}
+						Icon={CiCircleList}
 					/>
 					<LinkBox
 						url='/'
-						title='Unread Inbox'
+						title='Scheduled Replies'
 						color='#D6DAF0'
-						Icon={BiMessageDetail}
+						Icon={TbCalendarTime}
 					/>
 					<LinkBox
 						url='/'
 						title='Unread Inbox'
 						color='#F0D6E4'
-						Icon={BiMessageDetail}
+						Icon={HiUserPlus}
 					/>
 					<LinkBox
 						url='/'
-						title='Unread Inbox'
+						title='Escalations'
 						color='#ECEEB8'
-						Icon={BiMessageDetail}
+						Icon={HiOutlineBellAlert}
 					/>
 					<LinkBox
 						url='/'
-						title='Unread Inbox'
+						title='View Insights'
 						color='#D6F0D6'
-						Icon={BiMessageDetail}
+						Icon={TbBulb}
 					/>
+				</div>
+			</div>
+			<div className='bottomplane flex w-full bg-red-100 h-[500px] flex-wrap md:flex-row flex-col'>
+				<div className='left flex-1'>
+					<div className='box border-2 md:mx-10 mx-2 my-2 p-4 rounded-sm'>
+						hello
+					</div>
+				</div>
+				<div className='right flex-1 bg-green-200'>
+					<div className='box border-2 md:mx-10 mx-2 my-2 p-4 rounded-sm'>
+						hello
+					</div>
 				</div>
 			</div>
 		</div>
