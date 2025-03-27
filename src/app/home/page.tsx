@@ -15,7 +15,7 @@ import { FiMail } from 'react-icons/fi';
 
 const page = () => {
 	return (
-		<div>
+		<div className='pb-10'>
 			<Navbar />
 			<div className='homeBannerLinks md:px-10 px-6 w-full py-6 border-2 border-[#e7e7e7]'>
 				{/* title */}
