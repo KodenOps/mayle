@@ -64,7 +64,7 @@ const page = () => {
 			</div>
 			<div className='bottomplane flex w-full  min-[500px]  md:flex-row flex-col'>
 				<div className='lefts flex-1 h-full'>
-					<div className='box md:border-2  md:ml-10 md:mx-2 mx-4 my-2 p-4 rounded-sm border-[#ebebeb]'>
+					<div className='box md:border-1  md:ml-10 md:mx-2 mx-4 my-2 p-4 rounded-sm border-[#ebebeb]'>
 						<Title
 							header='Email Responder'
 							subtext="Received A mail you don't know what response to Give?"
@@ -98,7 +98,7 @@ const page = () => {
 				</div>
 				<hr className='md:hidden block border-t-2 border-[#c4c4c4] my-4' />
 				<div className='rights flex-1 h-full'>
-					<div className='box md:border-2 md:mr-10  mx-2 my-2 p-4 rounded-sm border-[#ebebeb]'>
+					<div className='box md:border-1 md:mr-10  mx-2 my-2 p-4 rounded-sm border-[#ebebeb]'>
 						<Title
 							header='Pending Tasks'
 							subtext='Your opened mails will appear here...'
