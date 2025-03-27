@@ -7,7 +7,7 @@ import { RiMenu4Fill } from 'react-icons/ri';
 
 const Navbar = () => {
 	return (
-		<div className='md:p-10 md:pb-4 p-5 pb-2 flex items-center justify-between bg-white shadow-md'>
+		<div className='md:p-6 md:pb-4 p-5 pb-2 flex items-center justify-between bg-white shadow-md'>
 			<div className='logo'>
 				<Image
 					src={logo}
