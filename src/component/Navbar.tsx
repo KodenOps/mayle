@@ -15,7 +15,7 @@ const Navbar = () => {
 					width={50}
 				/>
 			</div>
-			<div className='search md:flex items-center  gap-4 border-1 px-4 py-2 md:w-md border-[#c4c4c4] rounded-sm hidden'>
+			<div className='search md:flex items-center  gap-4 border-1 px-4 py-2 md:w-md border-[#ebebeb] rounded-sm hidden'>
 				<IoSearchSharp
 					size={25}
 					color='#c4c4c4'
