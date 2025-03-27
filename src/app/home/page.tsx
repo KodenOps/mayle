@@ -9,6 +9,9 @@ import { TbCalendarTime } from 'react-icons/tb';
 import { HiOutlineBellAlert } from 'react-icons/hi2';
 import { TbBulb } from 'react-icons/tb';
 import { HiUserPlus } from 'react-icons/hi2';
+import empty_task from '../../../public/assets/empty_task.png';
+import Image from 'next/image';
+import { FiMail } from 'react-icons/fi';
 
 const page = () => {
 	return (
@@ -59,15 +62,59 @@ const page = () => {
 					/>
 				</div>
 			</div>
-			<div className='bottomplane flex w-full bg-red-100 h-[500px] flex-wrap md:flex-row flex-col'>
-				<div className='left flex-1'>
-					<div className='box border-2 md:mx-10 mx-2 my-2 p-4 rounded-sm'>
-						hello
+			<div className='bottomplane flex w-full  min-[500px]  md:flex-row flex-col'>
+				<div className='lefts flex-1 h-full'>
+					<div className='box md:border-2  md:ml-10 md:mx-2 mx-4 my-2 p-4 rounded-sm border-[#C4C4C4]'>
+						<Title
+							header='Email Responder'
+							subtext="Received A mail you don't know what response to Give?"
+						/>
+
+						<div className='mailbox  mt-4 border-2 border-[#eeeeee] p-4'>
+							<div className='flex items-start gap-2'>
+								<FiMail
+									size={20}
+									color='#c4c4c4'
+								/>
+
+								<textarea
+									name='name'
+									className='w-full outline-none '
+									id=''
+									cols={20}
+									rows={10}
+									placeholder='Paste Email here'></textarea>
+							</div>
+							<div className='flex items-start gap-4'>
+								<button className='px-6 py-[3px] bg-slate-300 rounded-full border-2 border-[#c4c4c4]'>
+									Formal
+								</button>
+								<button className='px-6 py-[3px] bg-slate-300 rounded-full border-2 border-[#c4c4c4]'>
+									Casual
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div className='right flex-1 bg-green-200'>
-					<div className='box border-2 md:mx-10 mx-2 my-2 p-4 rounded-sm'>
-						hello
+				<hr className='md:hidden block border-t-2 border-[#c4c4c4] my-4' />
+				<div className='rights flex-1 h-full'>
+					<div className='box md:border-2 md:mr-10  mx-2 my-2 p-4 rounded-sm border-[#C4C4C4]'>
+						<Title
+							header='Pending Tasks'
+							subtext='Your opened mails will appear here...'
+						/>
+						<div className='w-full h-auto flex items-center justify-center mt-10'>
+							<div>
+								<Image
+									src={empty_task}
+									alt='empty task image'
+									width={270}
+								/>
+								<p className='text-md text-[#7A7676] font-medium text-center w-full'>
+									No pending Task Currently
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
