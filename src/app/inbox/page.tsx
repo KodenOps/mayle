@@ -1,7 +1,8 @@
+'use client';
 import LinkBox from '@/component/LinkBox';
 import Navbar from '@/component/Navbar';
 import Title from '@/component/Title';
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineMessage } from 'react-icons/md';
 import { GiFiles } from 'react-icons/gi';
 import { GoReport } from 'react-icons/go';
@@ -12,8 +13,10 @@ import { IoMdAlarm } from 'react-icons/io';
 import { HiOutlineBellAlert } from 'react-icons/hi2';
 import { IoSearchSharp } from 'react-icons/io5';
 import { RiFilter3Line } from 'react-icons/ri';
+import { TbCaretDownFilled } from 'react-icons/tb';
 
 const page = () => {
+	const [mailselected, setmailselected] = useState(false);
 	return (
 		<div>
 			<Navbar />
@@ -72,10 +75,19 @@ const page = () => {
 						<hr className='w-[94%] mx-[3%] border-1 border-[#c4c4c4] my-4' />
 						<div className='emailList w-full'>
 							<div className='header flex md:items-center justify-between w-full  md:flex-row flex-col'>
-								<h3 className='font-semibold text-md text-[#1D4642]'>
-									Unclassified Inbox{' '}
-									<span className='text-sm text-[#59514F]'>(234 mails)</span>
-								</h3>
+								<div className='items w-full flex items-center justify-between'>
+									<h3 className='font-semibold text-md text-[#1D4642] '>
+										Unclassified Inbox{' '}
+										<span className='text-sm text-[#59514F]' onClick={()=> setmailselected((!mailselected))}>(234 mails)</span>
+									</h3>
+									<button
+										className={`${
+											mailselected === true ? 'flex' : 'hidden'
+										} items-center justify-center gap-2 py-2 bg-[#07998C] text-white  px-4`}>
+										Actions <TbCaretDownFilled size={20} />
+									</button>
+								</div>
+
 								<div className='search md:w-auto  w-full flex items-center justify-between  gap-3'>
 									<div className='search flex items-center  gap-4 border-1 px-4 py-2 md:w-md w-full mt-4 border-[#ebebeb] rounded-sm '>
 										<IoSearchSharp
