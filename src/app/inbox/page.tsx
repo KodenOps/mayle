@@ -76,7 +76,7 @@ const page = () => {
 									<span className='text-sm text-[#59514F]'>(234 mails)</span>
 								</h3>
 								<div className='search md:w-auto  w-full'>
-									<div className='search md:flex items-center  gap-4 border-1 px-4 py-2 md:w-md border-[#ebebeb] rounded-sm mt-4'>
+									<div className='search flex items-center  gap-4 border-1 px-4 py-2 md:w-md border-[#ebebeb] rounded-sm mt-4'>
 										<IoSearchSharp
 											size={25}
 											color='#c4c4c4'
