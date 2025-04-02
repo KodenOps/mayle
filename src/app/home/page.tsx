@@ -27,7 +27,7 @@ const page = () => {
 				/>
 				<div className='linksPlane flex items-center md:justify-start justify-around md:gap-4 gap-2 w-full mt-4 flex-wrap '>
 					<LinkBox
-						url='/'
+						url='/inbox'
 						title='Unread Inbox'
 						color='#D6EFF0'
 						Icon={BiMessageDetail}
