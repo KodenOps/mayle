@@ -1,7 +1,8 @@
+'use client';
 import LinkBox from '@/component/LinkBox';
 import Navbar from '@/component/Navbar';
 import Title from '@/component/Title';
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineMessage } from 'react-icons/md';
 import { BiMessageDetail } from 'react-icons/bi';
 import { CiCircleList } from 'react-icons/ci';
@@ -14,6 +15,7 @@ import Image from 'next/image';
 import { FiMail } from 'react-icons/fi';
 
 const page = () => {
+	const [emailCasual, setemailCasual] = useState(true);
 	return (
 		<div className='pb-10'>
 			<Navbar />
@@ -86,14 +88,33 @@ const page = () => {
 									placeholder='Paste Email here'></textarea>
 							</div>
 							<div className='flex items-start gap-4'>
-								<button className='px-6 py-[3px] bg-slate-300 rounded-full border-2 border-[#c4c4c4]'>
+								<button
+									className={`px-6 py-[3px] ${
+										emailCasual === false
+											? 'bg-[#07998C] text-white'
+											: 'bg-transparent'
+									} rounded-full border-2 border-[#c4c4c4]`}
+									onClick={(e) => {
+										setemailCasual(false);
+									}}>
 									Formal
 								</button>
-								<button className='px-6 py-[3px] bg-slate-300 rounded-full border-2 border-[#c4c4c4]'>
+								<button
+									className={`px-6 py-[3px] ${
+										emailCasual === true
+											? 'bg-[#07998C] text-white'
+											: 'bg-transparent'
+									} rounded-full border-2 border-[#c4c4c4]`}
+									onClick={(e) => {
+										setemailCasual(true);
+									}}>
 									Casual
 								</button>
 							</div>
 						</div>
+						<button className='py-3 px-6 bg-[#07998C] font-semibold text-white mt-4 rounded-sm cursor-pointer md:w-60 w-full'>
+							Generate Response
+						</button>
 					</div>
 				</div>
 				<hr className='md:hidden block border-t-2 border-[#c4c4c4] my-4' />
