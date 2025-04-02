@@ -88,7 +88,10 @@ const page = () => {
 											className='outline-none w-full placeholder:text-md border-transparent bg-transparent font-medium'
 										/>
 									</div>
-									<RiFilter3Line size={24} />
+									<RiFilter3Line
+										size={24}
+										className='mt-4'
+									/>
 								</div>
 							</div>
 						</div>
